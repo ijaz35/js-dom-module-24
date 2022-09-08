@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My awesome blogs</h1>
+    <section id="blog-section" class="blogs">
+        <article class="blog">
+            <h2 id="first-title">My Blog-1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo itaque neque autem odit dicta quis? Saepe
+                ipsam
+                veritatis at minus repudiandae corporis accusantium mollitia. Fugit vitae quaerat sed in debitis
+                nesciunt
+                qui veritatis atque! Aperiam reiciendis pariatur tempora quam incidunt fugiat obcaecati quas placeat
+                laboriosam explicabo. Veniam enim quia, repellat, necessitatibus ipsum voluptate quibusdam earum nobis
+                sequi
+                quam sint, animi dolorum. Laboriosam illum, vero possimus ducimus magnam officia accusantium architecto
+                dolorum quae qui aliquid, cupiditate, fugit ratione tempore incidunt. Id suscipit est corrupti soluta
+                rem
+                quis totam, similique repellat, sed sint maiores cupiditate quas dignissimos cumque, et ea vero
+                quisquam!
+            </p>
+        </article>
+        <article class="blog">
+            <h2 id="second-title">My Blog-2</h2>
+            <p>Ut, reiciendis nemo! Consequatur, ullam? Pariatur est quo unde odio, deserunt temporibus, nesciunt itaque
+                esse eos expedita eum quidem, laudantium voluptate quod dolore sapiente numquam illo animi? Dolorum,
+                ratione? Nisi distinctio, officia, quam molestiae error ratione vero suscipit hic molestias harum natus
+                minus consequatur temporibus quo placeat! Odit at sint adipisci mollitia, atque facere amet maxime.
+                Dolorem
+                eaque laudantium aliquid, nostrum numquam, dolores veritatis non hic eligendi omnis quas quasi maiores
+                accusantium laborum ipsam minima reiciendis est obcaecati consectetur error nulla. Sint ducimus hic
+                minima
+                reiciendis, voluptatibus error ut? Doloremque sed dolores eos? Dicta consequatur voluptatum vero
+                suscipit
+                modi ratione.</p>
+        </article>
+        <article class="blog">
+            <h2 id="third-title">My Blog-3</h2>
+            <p>Sequi fugiat ut, tenetur corrupti eius reiciendis accusamus veritatis voluptatum consequatur at laborum
+                non
+                laudantium in ea vitae magnam quidem magni assumenda vero natus. Officiis harum, nulla dolores fugit
+                laudantium nemo expedita quaerat facilis, dignissimos illo at incidunt blanditiis ad tenetur voluptate
+                dolore in, illum totam. Dolore, officiis repellat, laborum aliquid ut vel eligendi repellendus iusto
+                labore
+                dolorum praesentium ipsa earum cumque fuga ipsum commodi veritatis facere blanditiis cum mollitia? Nihil
+                corrupti velit earum obcaecati at similique? Architecto voluptas modi sed dicta omnis dolorem minus
+                velit,
+                magni, iste voluptatibus nostrum non! Culpa, laborum numquam ullam facilis enim perspiciatis nihil
+                vitae.
+            </p>
+        </article>
+    </section>
+    <script>
+        var headings = document.getElementsByTagName('h2');
+        var h2 = document.getElementById('second-title');
+        h2.innerHTML = ' Updated by JS';
+        h2.style.color = 'blue';
+        h2.style.textAlign = 'center';
+        h2.style.backgroundColor = "cyan";
+        h2.style.padding = '10px';
+        h2.style.marginLeft = '10px';
+
+
+        const article = document.createElement('article');
+        article.classList.add('blog');
+
+        /* const blog4Heading = document.createElement('h2');
+        const blogParagraph = document.createElement('p');
+        blog4Heading.innerText = 'My blog-5';
+        blogParagraph.innerText = 'Ut, reiciendis nemo! Consequatur, ullam? Pariatur est quo unde odio, deserunt temporibus, nesciunt itaque esse eos expedita eum quidem, laudantium voluptate quod dolore sapiente numquam illo animi? Dolorum, ratione? Nisi ';
+
+        article.appendChild(blog4Heading);
+        article.appendChild(blogParagraph);
+        const blogSection = document.getElementById('blog-section');
+        blogSection.appendChild(article);
+        var blogs = document.getElementsByClassName('blog'); */
+        article.innerHTML = `
+        <h2>My blog-5</h2>
+        <p>Ut, reiciendis nemo! Consequatur, ullam? Pariatur est quo unde odio, deserunt temporibus, nesciunt itaque esse eos expedita eum quidem, laudantium voluptate quod dolore sapiente numquam illo animi? Dolorum, ratione? Nisi</p>
+        `
+        //article add to section
+        const blogSection = document.getElementById('blog-section');
+        blogSection.appendChild(article);
+        var blogs = document.getElementsByClassName('blog');
+
+
+        for (const blog of blogs) {
+            blog.style.border = '2px solid red';
+            blog.style.borderRadius = '10px';
+            blog.style.margin = '20px';
+            blog.style.padding = '10px';
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
